@@ -6,25 +6,19 @@
 \newkomavar{firstname}
 \newkomavar{lastname}
 
-\DeclareDocumentCommand{ \makeletter }{}{
-\clearpage
-\centering
-\vspace*{.3\textheight}
-\Large Letter Page by \usekomavar{firstname} \usekomavar{lastname}\par
-\clearpage
+\DeclareDocumentCommand{ \makecover }{ O{} }{
+\begin{titlepage}
+\vspace*{.1\textheight}
+	\sffamily\Huge\usekomavar{fromname}\par
+\vfill{\raggedleft
+#1
+\par}\vspace{.2\textheight}
+\end{titlepage}
 }
-\DeclareDocumentCommand{ \makecv }{}{
-\clearpage
-\centering
-\vspace*{.3\textheight}
-\Large CV Page \par
-\clearpage
-}
-\DeclareDocumentCommand{ \makecover }{}{
-\clearpage
-\centering
-\vspace*{.3\textheight}
-\Large Cover Page \par
-\clearpage
-}
+
+\setkomavar{fromname}{\usekomavar{firstname}~\usekomavar{lastname}}
+
+\KOMAoption{parskip}{half}
+\setkomafont{subject}{\normalfont}
+\setkomafont{title}{\normalfont\large\bfseries}
 \endinput

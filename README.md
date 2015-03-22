@@ -7,9 +7,10 @@ letter, resume and similar stuff in one go.
 First ideas to implement an easy-to-use example can be found
 here.
 
-This is not to be considered as template for inexperience users.
+This is not to be considered as a template for inexperience users.
 
-This example is for academic purposes only. 
+This example is for academic purposes only. It does not provide
+any ready to change optional switches.
 
 ----
 
@@ -22,4 +23,5 @@ finden sich hier.
 
 Dies soll nicht als Vorlage für unerfahrene Nutzer dienen.
 
-Dieses Beispiel dient lediglich akademischen Zwecken. 
+Dieses Beispiel dient lediglich akademischen Zwecken. Es bietet
+keine schnell änderbaren Schalter.
