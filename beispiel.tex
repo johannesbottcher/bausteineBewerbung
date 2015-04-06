@@ -1,45 +1,77 @@
-\documentclass[x11names,parskip=half,ngerman]{bewerbung}
+\documentclass[x11names,parskip=half,american]{bewerbung}
 \LoadLetterOptions{tastyFriedLiver}
+\addbibresource{tflCvReferences.bib}
 \usepackage{AlegreyaSans}
+\usepackage{babel}
 \usepackage{Alegreya}
 \usepackage{hyperref}
+\newcommand{\lang}[1]{\texttt{#1}}
 
 \begin{document}
-%\makecover[
-%ambitious\\
-%knowledgeable\\
-%trustworthy
-%]
-%\setkomavar{subject}{job application}
-%\setkomavar{title}{your search is over}
-%\begin{letter}{Dagobert Duck\\
-%		Human Ressources\\
-%	Duckburg}
-%	\opening{Dear Human Ressources Guys,}
-%
-%	seems you are looking for a reliable person to run the
-%	local nuclear power plant. I think your search will be
-%	over after you invited me for an interview. I am
-%	 everything you need and i am willing to contribute my
-%	knowledge and strength to the company. 
-%
-%	I make a hell of a potato salad, i'll prove it at
-%	the next company picnic.
-%
-%	I'll enclose some of my previous activities.
-%
-%	\closing{Best regards}
-%\encl{zeugnis, Photo}
-%\end{letter}
+\makecover[
+ambitious\\
+knowledgeable\\
+trustworthy
+]
+\setkomavar{subject}{job application}
+\setkomavar{title}{your search is over}
+\begin{letter}{Dagobert Duck\\
+		Human Ressources\\
+	Duckburg}
+	\opening{Dear Human Ressources Guys,}
 
+	seems you are looking for a reliable person to run the
+	local nuclear power plant. I think your search will be
+	over after you invited me for an interview. I am
+	 everything you need and i am willing to contribute my
+	knowledge and strength to the company. 
+
+	I make a hell of a potato salad, i'll prove it at
+	the next company picnic.
+
+	I'll enclose some of my previous activities.
+
+	\closing{Best regards}
+\encl{zeugnis, Photo}
+\end{letter}
+
+
+\cvsymbols
 \begin{cv}
-	\cvsec{tfl}
-	\cvdate{2013/11/01}{The naked man}[ Demonstrating nude in
-	front of the Reichstag ]
-	\cvdate{2007/10 - 2015}{Duff Man}[ making promotions for Duff, the best beer a man can find ]
+	\cvsec{Scholarly Stuff}
+	\cvdate{2007}{Duckburg High School}[Abitur-High School
+	Diploma]
+	\cvdate{2007-10-1012-12}{University of
+	Shelbyville}[Thesis: \citetitle{thesis:ddd}]
+	\cvsec{Achievements}
+	\cvdate{2013-11-01}{The naked man}[ Demonstrating nude in
+	front of the \emph{Reichstag}]
+	\cvdate{2007-10 - 2014}{Duff Man}[ making promotions for Duff, the best beer a man can find ]
+	\cvdate{2013-10-25}{Best day of my life}[I married the
+	girl of my dreams, Patty Mayonaise]
+	\cvsec{Experience}
+	\begin{cvlist}
+	\item [Office] Fluent with Microsoft Office products like
+		Word, Excel and all the other crap
+	\item [Operating systems] Good knowledge of Microsoft
+		Windows for compatibility reasons, fluent wuth
+		\texttt{unix}oide systems
+	\item [Languages] I can speak english, german, a little
+		bit french. Though i cannot speak it, i know the
+		greek, russian and korean script. 
+	\item [\faCode] For every purpose something special:
+		\lang{perl}, \lang{LaTeX}, \lang{awk}, \lang{sed},
+		and a little bit of \lang{R}, \lang{Matlab}
+		\\I cannot use \lang{pyhton} though, i have
+		\emph{AngstVorSchlangen}
+	\item [multitalent] washing the dishes, repair the table,
+		set up the TV, changing diapers, securing a
+		building, getting things done.\\ What needs to be done will be done. 
+	\end{cvlist}
+	\nocite{*}
+	\printbibliography[heading=cvRef]
 \end{cv}
 \end{document}
 
-%TODO: fix dates to word (womehow) with biblatex.
+%TODO: fix dates to word (somehow) with biblatex.
 
-:

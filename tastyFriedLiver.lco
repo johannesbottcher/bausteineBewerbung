@@ -2,8 +2,8 @@
 letters]
 \newkomavar{firstname}
 \newkomavar{lastname}
-\setkomavar{firstname}{tasty}
-\setkomavar{lastname}{fried liver}
+\setkomavar{firstname}{Tasty}
+\setkomavar{lastname}{Fried Liver}
 \setkomavar{fromname}{\usekomavar{firstname}~\usekomavar{lastname}}
 \setkomavar{frommobilephone}{0128\,9456}
 \setkomavar{fromemail}{tfliver@gmail.com}
