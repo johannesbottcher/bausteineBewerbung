@@ -1,0 +1,12 @@
+\ProvidesFile{tastyFriedLiver.lco}[2015/04/06 personal data for
+letters]
+\newkomavar{firstname}
+\newkomavar{lastname}
+\setkomavar{firstname}{tasty}
+\setkomavar{lastname}{fried liver}
+\setkomavar{fromname}{\usekomavar{firstname}~\usekomavar{lastname}}
+\setkomavar{frommobilephone}{0128\,9456}
+\setkomavar{fromemail}{tfliver@gmail.com}
+\setkomavar{fromaddress}{The Hill\\Shelbyville}
+\setkomavar{github}{tfliver}
+\setkomavar{linkedin}{tf\noligature{}liver}

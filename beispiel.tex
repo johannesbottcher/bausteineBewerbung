@@ -1,32 +1,45 @@
-\documentclass[parskip=half]{bewerbung}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
+\documentclass[x11names,parskip=half,ngerman]{bewerbung}
+\LoadLetterOptions{tastyFriedLiver}
 \usepackage{AlegreyaSans}
 \usepackage{Alegreya}
-\input{personalData.cfg}
+\usepackage{hyperref}
+
 \begin{document}
-\makecover[
-ambitious\\
-knowledgeable\\
-trustworthy
-]
-\begin{letter}{Dagobert Duck\\
-		Human Ressources\\
-	Duckburg}
-	\opening{Dear Human Ressources Guys,}
+%\makecover[
+%ambitious\\
+%knowledgeable\\
+%trustworthy
+%]
+%\setkomavar{subject}{job application}
+%\setkomavar{title}{your search is over}
+%\begin{letter}{Dagobert Duck\\
+%		Human Ressources\\
+%	Duckburg}
+%	\opening{Dear Human Ressources Guys,}
+%
+%	seems you are looking for a reliable person to run the
+%	local nuclear power plant. I think your search will be
+%	over after you invited me for an interview. I am
+%	 everything you need and i am willing to contribute my
+%	knowledge and strength to the company. 
+%
+%	I make a hell of a potato salad, i'll prove it at
+%	the next company picnic.
+%
+%	I'll enclose some of my previous activities.
+%
+%	\closing{Best regards}
+%\encl{zeugnis, Photo}
+%\end{letter}
 
-	seems you are looking for a reliable person to run the
-	local nuclear power plant. I think your search will be
-	over after you invited me for an interview. I am
-	 everything you need and i am willing to contribute my
-	knowledge and strength to the company. 
-
-	I make a hell of a potato salad, i'll prove it at
-	the next company picnic.
-
-	I'll enclose some of my previous activities.
-
-	\closing{Best regards}
-\encl{zeugnis, Photo}
-\end{letter}
+\begin{cv}
+	\cvsec{tfl}
+	\cvdate{2013/11/01}{The naked man}[ Demonstrating nude in
+	front of the Reichstag ]
+	\cvdate{2007/10 - 2015}{Duff Man}[ making promotions for Duff, the best beer a man can find ]
+\end{cv}
 \end{document}
+
+%TODO: fix dates to word (womehow) with biblatex.
+
+:
