@@ -5,3 +5,7 @@
 *.fdb_latexmk
 *.out
 *.bcf
+*.out
+*.run.xml
+*.tex.bak
+*.swp
