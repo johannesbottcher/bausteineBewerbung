@@ -10,7 +10,7 @@ your editor.}
 \fi
 \fi
 \RequirePackage{xcolor}
-\colorlet{cvGrey}{Ivory4!30!black}
+\colorlet{cvGrey}{Ivory4!70!black}
 \RequirePackage{xparse}
 \RequirePackage{array}
 \RequirePackage{enumitem}
