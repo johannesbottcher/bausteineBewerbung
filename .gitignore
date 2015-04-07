@@ -1,0 +1,7 @@
+*.alg
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.out
+*.bcf

@@ -35,8 +35,8 @@ your editor.}
 \KOMAoption{fromalign}{left}
 
 \KOMAoption{parskip}{half}
-\setkomafont{subject}{\normalfont}
-\setkomafont{title}{\normalfont\large\bfseries}
+\setkomafont{lettersubject}{\normalfont}
+\setkomafont{lettertitle}{\normalfont\large\bfseries}
 
 \NewDocumentEnvironment{cv}{ }{
 	\clearpage
