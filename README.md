@@ -18,8 +18,9 @@ KOMA-script. If you want to use this to apply to your own stuff,
 remember to make a copy and give the files a new and distinct name. 
 This code comes without any warranty, mainly because it is just a
 little sandbox. If you use it for serious projects and everything
-explodes, you have been
-warned.
+explodes, you have been warned. There will be absolutely no
+*immediate support*.
+
 
 
 
@@ -44,4 +45,5 @@ willst, denke daran Kopien zu machen und diesen neue und
 deutliche Namen zu geben. Dieser Code kommt ohne jede
 Gewährleistung, hauptsächlich da das nur ein kleiner Sandkasten
 ist. Wenn du das für deine Projekte benutzt und alles explodiert,
-du wurdest gewarnt.
+du wurdest gewarnt. Es wird keine *sofortige* Unterstützung
+erfolgen. 
