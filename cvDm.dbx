@@ -1,0 +1,6 @@
+\ProvidesFile{cvDm}[2015/11/19 JB]
+\DeclareDatamodelEntrytypes{cventry,cvinfo,job,education,honor}
+
+\DeclareDatamodelFields[type=field,datatype=literal]{cvtitle,degree,infotitle,position,thesistitle}
+\DeclareDatamodelFields[type=list,datatype=literal]{description,cvinfo}
+

@@ -1,0 +1,59 @@
+
+@education{highschool,
+	date={2010-11-22/2015-11-01},
+	location={Narnia, Institute of dreaming},
+	degree={Highschool-diploma},
+	keywords={education},
+}
+
+@education{university,
+	cvdate={2017-02-14/2019-12-01},
+	location={University of Napping and National Institute of
+	sleeping},
+	degree={Master of Sleepiness},
+	description={books and lectures and studying and
+		parties },
+	keywords={education},
+	thesistitle={thesis:ddd},
+}
+
+@job{janitor,
+	cvdate={2016-09/2018-07},
+	location={global janitor services},
+	keywords={job},
+	position={janitor},
+	description={cleaning and maintaining buildings and
+		taking care of general issues and 
+		train new employees},
+}
+
+@honor{jackass,
+cvdate={2016},
+cvtitle={Biggest jackass in the freakin world},
+description={just being an ass hole and scaring little children
+and sniffing old women's bike saddles},
+}
+
+@honor{loser,
+cvdate={2002},
+cvtitle={biggest loser in town},
+}
+
+@cvinfo{languages,
+	infotitle={Languages},
+	cvinfo={ {german} and {english (fluent)} and {spanish~(barely)}},
+}
+
+@cvinfo{latex,
+	infotitle={Vereine},
+	cvinfo={Dante e.\,V. and Dixie Ducks Germany~e.\,V.}
+}
+
+@cvinfo{programmming,
+	infotitle={Programming and related},
+	cvinfo={LaTeX and Python and Perl and Matlab}
+}
+@cvinfo{commServe,
+	infotitle={community services},
+	cvinfo={Teaching Dixie and helping out and being nice},
+}

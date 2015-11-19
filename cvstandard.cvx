@@ -1,0 +1,69 @@
+\ProvidesFile{cvstandard.cvx}
+[2015/11/19 v.01 CV standard style (JB)]
+
+\RequireBibliographyStyle{standard}
+\defbibenvironment{cventries}
+  {\list
+     {\printtext[]{%
+	\printdate\addcolon}}%
+     {\setlength{\labelwidth}{\labelnumberwidth}%
+      \setlength{\leftmargin}{\labelwidth}%
+      \setlength{\labelsep}{\biblabelsep}%
+      \addtolength{\leftmargin}{\labelsep}%
+      \setlength{\itemsep}{\bibitemsep}%
+      \setlength{\parsep}{\bibparsep}}%
+      \renewcommand*{\makelabel}[1]{\hss##1}}%
+  {\endlist}%
+  {\item}%
+
+
+%\ifbool{twocolumn}{\ExecuteBibliographyOptions{date=short}}{}
+
+
+\DeclareBibliographyDriver{cvinfo}{%
+	\printfield{infotitle}\addcolon\addspace
+	\printlist[][-\value{listtotal}]{cvinfo}
+}
+\newcommand{\delimA}{\newline}
+\let\delimB\delimA
+\DeclareBibliographyDriver{cventry}{%
+	\printlist{location}\addcomma\space%
+	\iffieldundef{degree}{\iffieldundef{position}{}{\printfield{position}\delimA}}{%
+		\printfield{degree}\delimA}
+		\iffieldundef{thesistitle}{}{\bibstring{thesistitle}\printfield{thesistitle}\delimB}
+	\printlist[][-\value{listtotal}]{description}
+}
+\DeclareFieldFormat{infotitle}{\textbf{#1}}
+\DeclareFieldFormat{degree}{\textit{#1}}
+\DeclareFieldFormat{position}{\textit{#1}}
+\DeclareFieldFormat{thesistitle}{\citetitle{#1}}
+\NewBibliographyString{thesistitle}
+\DefineBibliographyStrings{english}{thesistitle={final paper:\addspace}}
+\DefineBibliographyStrings{ngerman}{thesistitle={Abschlu\ss arbeit\addcolon\addspace}}
+
+\DeclareBibliographyDriver{education}{%
+	\printlist{location}\addcomma\space%
+{\iffieldundef{position}{}{\printfield{position}\delimA}}
+	\printlist[][-\value{listtotal}]{description}
+}
+\DeclareBibliographyDriver{honor}{%
+	\printfield{cvtitle}\newunit\iflistundef{description}{}{\printlist{description}}
+\usebibmacro{finentry}
+}
+\DeclareBibliographyDriver{job}{%
+	\printlist{location}\addcomma\space%
+{\iffieldundef{position}{}{\printfield{position}\delimA}}
+	\printlist[][-\value{listtotal}]{description}
+}
+
+
+\DeclareDriverSourcemap[datatype=bibtex]{
+\map{
+	\step[fieldsource=cvdate, fieldtarget=date]
+}
+}
+\DeclareDocumentCommand{\printcventries}{ m }{%
+\printbibliography[env=cventries
+,#1]%
+}
+%todo: predefine all commands and simply redefine to avoid error

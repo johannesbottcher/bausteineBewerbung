@@ -1,0 +1,30 @@
+\listfiles
+\documentclass[english,x11names,ngerman]{article}
+	\usepackage{babel}
+	\usepackage{xparse}
+\usepackage{hyperref}
+\RequirePackage[%
+datamodel=cvDm,
+	bibstyle=standard,
+	date=long,
+	labeldate,
+	sorting=ydnt,
+	defernumbers=true,
+	dateabbrev=false,
+	backend=biber]{biblatex}
+	\input{cvstandard.cvx}
+\addbibresource{cvData.cvd}
+\addbibresource{tflCvReferences.bib}
+
+\begin{document}
+
+\printcventries{ type=education,title={Ausbildung} }
+\printcventries{ type=job,title={Jobs} }
+\printcventries{ type=honor,title={Honors} }
+\printbibliography[type=cvinfo,title={Info}]
+\printbibliography[nottype=cvinfo,nottype=cventry]
+\nocite{*}
+\end{document}
+%TODO Was ist bei twocolumn? 
+
+%TODO 
